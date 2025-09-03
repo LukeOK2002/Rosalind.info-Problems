@@ -1,4 +1,7 @@
+#Given: A protein string of length at most 1000 aa.
+#Return: The total number of different RNA strings from which the protein could have been translated, modulo 1,000,000. (Don't neglect the importance of the stop codon in protein translation.)
 
+#Approached this by multiplying each amino acid by the number of total possible RNA constituents e.g if A, output = 3*4 and so on
 def find_strings(AAcids):
     #Dictionary generated using ChatGPT,
     amino_acid_codons = {
